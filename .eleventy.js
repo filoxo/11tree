@@ -24,7 +24,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // using https://iconify.design/docs/usage/css/no-code/ approach for icons.
-  // This generates an Iconify stylesheet URL, exposed as a njk global for interpolation in base layout.
+  // This generates an Iconify stylesheet URL, exposed as a njk global for interpolation in default layout.
   eleventyConfig.addNunjucksGlobal("iconSetUrl", () => {
     const icons = encodeURIComponent(Array.from(iconSet).join(","));
     // enumerate icons from https://icon-sets.iconify.design/ri/ in order to optimize stylesheet weight
