@@ -4,6 +4,9 @@ const PostCSSPlugin = require("eleventy-plugin-postcss");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/static");
   eleventyConfig.addPlugin(PostCSSPlugin);
+  eleventyConfig.addShortcode("avatar", function (url, alt) {
+    return `<img src="${url}" alt="${alt}" class="rounded-full w-24 h-24 border-4 border-solid border-teal-500 m-auto" />`;
+  });
 
   eleventyConfig.addShortcode("link", function (href, contents) {
     return `<a href="${href}" class="">${contents}</a>`;
