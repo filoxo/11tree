@@ -23,7 +23,7 @@ module.exports = function (eleventyConfig) {
   /* use in .njk files, `{% icon 'icon-name' %}` */
   eleventyConfig.addShortcode("icon", (iconName) => {
     iconSet.add(iconName);
-    return `<span class="icon icon--${iconPrefix} icon--${iconPrefix}--${iconName} text-primary dark:text-white" aria-hidden="true"></span>`;
+    return `<span class="icon icon--${iconPrefix} icon--${iconPrefix}--${iconName} text-current text-3xl" aria-hidden="true"></span>`;
   });
 
   // using https://iconify.design/docs/usage/css/no-code/ approach for icons.
