@@ -8,8 +8,8 @@ module.exports = function (eleventyConfig) {
     return `<img src="${url}" alt="${alt}" class="rounded-full w-24 h-24 border-4 border-solid border-teal-500 m-auto" />`;
   });
 
-  eleventyConfig.addShortcode("link", function (href, contents) {
-    return `<a href="${href}" class="">${contents}</a>`;
+  eleventyConfig.addPairedShortcode("link", function (content, href) {
+    return `<a href="${href}" class="inline-flex items-center gap-4 justify-center">${content}</a>`;
   });
 
   eleventyConfig.addNunjucksGlobal("currentYear", new Date().getFullYear());
