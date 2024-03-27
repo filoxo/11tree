@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{title}}</title>
     <meta name="view-transition" content="same-origin" />
-    ii
     <link rel="stylesheet" id="icon-url" href="{{ iconSetUrl() }}" />
     <link rel="stylesheet" href="/styles/theme.css" />
   </head>
   <body>
-    <main class="">{{ content | safe }}</main>
+    <main class="flex flex-col items-stretch justify-center gap-6 max-w-md w-full m-auto p-3 md:p-6">{{ content | safe }}</main>
     <footer class="text-center">&copy; {{ currentYear }}</footer>
     {% block scripts %}{% endblock %}
   </body>
