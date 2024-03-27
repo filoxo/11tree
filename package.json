@@ -1,0 +1,29 @@
+{
+  "name": "11tree",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "add:project": "node scripts/add-project.js"
+  },
+  "author": "@filoxo",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "eleventy-plugin-postcss": "^1.0.4",
+    "postcss": "^8.4.31",
+    "postcss-import": "^15.1.0",
+    "tailwindcss": "^3.3.5"
+  },
+  "dependencies": {
+    "@picocss/pico": "^2.0.0-alpha1",
+    "eleventy-sass": "^2.2.1"
+  },
+  "prettier": {}
+}
