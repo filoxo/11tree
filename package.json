@@ -1,7 +1,7 @@
 {
   "name": "11tree",
   "version": "0.0.1",
-  "description": "",
+  "description": "A Linktree-clone static site, built on 11ty",
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy",
