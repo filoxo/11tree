@@ -1,0 +1,3 @@
+<a class="inline-flex items-center gap-4 justify-center" :href={href}>
+  <slot>Learn more</slot>
+</a>
