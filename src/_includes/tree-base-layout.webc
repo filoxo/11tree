@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="view-transition" content="same-origin" />
+    <title @text="title"></title>
+    <link webc:keep rel="stylesheet" href="/styles/theme.css" />
+	</head>
+	<body class="m-5 md:m-7 space-y-9">
+    <main class="max-w-lg m-auto space-y-5 md:space-y-7" @raw="content"></main>
+    <footer>
+      <p class="text-center text-sm text-gray-500">&copy; <template @text="currentYear" webc:nokeep></template></p>
+    </footer>
+  </body>
+</html>

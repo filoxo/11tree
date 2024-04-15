@@ -1,0 +1,13 @@
+---
+layout: "tree-base-layout"
+title: 11tree - a Linktree clone static site
+---
+
+<tree-avatar src="/static/profile.jpg" alt="⭐️ @11tree on GitHub"></tree-avatar>
+
+<p>A Linktree-clone static site. Powered by 11ty.</p>
+
+<a href="https://www.youtube.com/channel/UC9J3v2J1ZJ1vJ5J5Y1-3J5A">YouTube</a>
+
+<tree-link href="https://www.youtube.com/channel/UC9J3v2J1ZJ1vJ5J5Y1-3J5A">tree link contents</tree-link>
+
