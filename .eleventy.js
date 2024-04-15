@@ -5,7 +5,13 @@ const pluginWebc = require("@11ty/eleventy-plugin-webc");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/static");
   eleventyConfig.addPlugin(PostCSSPlugin);
-  eleventyConfig.addPlugin(pluginWebc);
+  eleventyConfig.addPlugin(pluginWebc, {
+    /**
+     * Global no-import Components configuration - any webc components in here can be used in any template without needing to import.
+     * @see https://www.11ty.dev/docs/languages/webc/#global-no-import-components
+     */
+    components: "src/_components/**/*.webc",
+  });
 
   // eleventyConfig.addShortcode("avatar", function (url, alt) {
   //   return `<img src="${url}" alt="${alt}" class="rounded-full w-24 h-24 border-4 border-solid border-teal-500 m-auto" />`;
