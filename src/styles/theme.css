@@ -27,4 +27,7 @@
   h4 {
     @apply text-xl font-bold text-slate-700 text-center;
   }
+  .section {
+    @apply max-w-lg m-auto space-y-5 md:space-y-7;
+  }
 }
