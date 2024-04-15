@@ -1,0 +1,7 @@
+<article class="inline-flex flex-col items-center gap-4 justify-center bg-slate-100 p-7 rounded-xl hover:shadow-lg transition-shadow">
+  <slot name="content-top"></slot>
+  <a :href="'https://www.youtube.com/watch?v=' + videoId" class="p-2">
+    <img :src="'https://img.youtube.com/vi/' + videoId + '/0.jpg'" alt="thumbnail" class="rounded max-w-20% aspect-video object-cover" draggable="false" /> 
+  </a>
+  <slot name="content-bottom"></slot>
+</article>
