@@ -2,12 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+@layer components {
   body {
-    @apply text-xl text-slate-800;
+    @apply text-xl text-slate-800 text-center;
   } 
-  a {
-    @apply py-2 px-5 bg-teal-500 text-white rounded-full shadow-md hover:bg-teal-700 focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-75 inline-block w-full text-center;
+  a, button {
+    @apply py-2 px-5 bg-teal-500 leading-relaxed text-white rounded-full shadow-md hover:bg-teal-700 focus:outline-none focus:ring focus:ring-teal-300 focus:ring-opacity-75 inline-block w-full text-center;
+  }
+  [type="button"] {
+    @apply bg-teal-500
   }
   h1 {
     @apply text-4xl font-bold text-teal-700 text-center;
