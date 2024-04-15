@@ -3,7 +3,7 @@ layout: "tree-base-layout"
 title: 11tree - a Linktree clone static site
 ---
 
-<tree-avatar src="/static/profile.jpg" alt="⭐️ @11tree on GitHub"></tree-avatar>
+<tree-avatar src="/static/profile.webp" alt="⭐️ @11tree on GitHub"></tree-avatar>
 
 <h1>@11tree</h1>
 
@@ -13,9 +13,9 @@ title: 11tree - a Linktree clone static site
 <a href="https://www.youtube.com/channel/UC9J3v2J1ZJ1vJ5J5Y1-3J5A">YouTube</a>
 
 <!-- ... or use the tree-link component -->
-<tree-link href="https://www.youtube.com/channel/UC9J3v2J1ZJ1vJ5J5Y1-3J5A"></tree-link>
+<tree-link href="https://www.youtube.com/channel/UC9J3v2J1ZJ1vJ5J5Y1-/"></tree-link>
 
-<!-- or get fancy with a simplistic YouTube embed (@todo - handle any video format?) -->
+<!-- tree-youtube-button is a simplistic YouTube embed link (@todo - handle any video format?) --> 
 <tree-youtube-button video-id="JK7mcDIXQyo">
   <span slot="content-top" >My Favorite Video!!</span>
   <span slot="content-bottom" class="text-left"> 
