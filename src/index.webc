@@ -10,14 +10,17 @@ title: 11tree - a Linktree clone static site
 <p>A Linktree-clone static site. Powered by 11ty & Tailwind.</p>
 
 <!-- Use regular HTML links... -->
-<a href="https://www.youtube.com/channel/UC9J3v2J1ZJ1vJ5J5Y1-3J5A">YouTube</a>
+<a href="https://www.youtube.com/channel/UC9J3v2J1ZJ1vJ5J5Y1-3J5A">More info...</a>
 
 <!-- ... or use the tree-link component -->
-<tree-link href="https://www.youtube.com/channel/UC9J3v2J1ZJ1vJ5J5Y1-/"></tree-link>
+<tree-link href="https://www.youtube.com/channel/UC9J3v2J1ZJ1vJ5J5Y1-/">
+  <tree-icon name="logo-youtube"></tree-icon>
+  YouTube Channel
+</tree-link>
 
 <!-- tree-youtube-button is a simplistic YouTube embed link (@todo - handle any video format?) --> 
 <tree-youtube-button video-id="JK7mcDIXQyo">
-  <span slot="content-top" >My Favorite Video!!</span>
+  <h3 slot="content-top">My Favorite Video!!</h3>
   <span slot="content-bottom" class="text-left"> 
     lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   </span>
