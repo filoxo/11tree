@@ -5,9 +5,20 @@ title: 11tree - a Linktree clone static site
 
 <tree-avatar src="/static/profile.jpg" alt="⭐️ @11tree on GitHub"></tree-avatar>
 
-<p>A Linktree-clone static site. Powered by 11ty.</p>
+<h1>@11tree</h1>
 
+<p>A Linktree-clone static site. Powered by 11ty & Tailwind.</p>
+
+<!-- Use regular HTML links... -->
 <a href="https://www.youtube.com/channel/UC9J3v2J1ZJ1vJ5J5Y1-3J5A">YouTube</a>
 
-<tree-link href="https://www.youtube.com/channel/UC9J3v2J1ZJ1vJ5J5Y1-3J5A">tree link contents</tree-link>
+<!-- ... or use the tree-link component -->
+<tree-link href="https://www.youtube.com/channel/UC9J3v2J1ZJ1vJ5J5Y1-3J5A"></tree-link>
 
+<!-- or get fancy with a simplistic YouTube embed (@todo - handle any video format?) -->
+<tree-youtube-button video-id="JK7mcDIXQyo">
+  <span slot="content-top" >My Favorite Video!!</span>
+  <span slot="content-bottom" class="text-left"> 
+    lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </span>
+</tree-link>
