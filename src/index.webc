@@ -10,18 +10,18 @@ title: 11tree - a Linktree clone static site
       @11tree
     </tree-link-pill>
     <tree-link-pill>
-      <tree-icon name="logo-youtube"></tree-icon>
+      <tree-icon name="logo-reddit"></tree-icon>
       u/11tree
     </tree-link-pill>
     <tree-link-pill>
       <tree-icon name="logo-twitter"></tree-icon>
-      x.com/11tree
+      x.com/@11tree
     </tree-link-pill>
   </tree-pill-group>
 </nav>
 
 <section class="section">
-  <tree-avatar src="/static/profile.webp" alt="⭐️ @11tree on GitHub"></tree-avatar>
+  <tree-avatar src="/static/dalle-ariel-2.webp" alt="⭐️ @11tree on GitHub"></tree-avatar>
 
   <h1>@11tree</h1>
 
@@ -38,8 +38,8 @@ title: 11tree - a Linktree clone static site
 
   <!-- tree-youtube-button is a simplistic YouTube embed link (@todo - handle any video format?) --> 
   <tree-youtube-button video-id="JK7mcDIXQyo">
-    <h3 slot="content-top">My Favorite Video!!</h3>
-    <span slot="content-bottom" class="text-left"> 
+    <h3 slot="content-top" class="text-fuchsia-800">My Latest Video!</h3>
+    <span slot="content-bottom" class="text-left text-fuchsia-800"> 
       lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </span>
   </tree-link>
