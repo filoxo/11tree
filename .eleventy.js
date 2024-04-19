@@ -52,9 +52,16 @@ module.exports = function (eleventyConfig) {
    */
   eleventyConfig.addGlobalData("icon", {
     prefix: "ion",
-    list: ["logo-youtube", "logo-twitter", "logo-instagram"],
+    list: new Set([
+      "logo-youtube",
+      "logo-twitter",
+      "logo-twitter-x",
+      "logo-instagram",
+      "logo-tiktok",
+      "logo-reddit",
+    ]),
     get url() {
-      const iconListParam = encodeURIComponent(this.list.join(","));
+      const iconListParam = encodeURIComponent(Array.from(this.list).join(","));
       return `https://api.iconify.design/${this.prefix}.css?icons=${iconListParam}`;
     },
   });
