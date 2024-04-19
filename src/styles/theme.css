@@ -7,27 +7,35 @@
  */
 @layer components {
   body {
-    @apply text-slate-800 text-center;
+    @apply text-fuchsia-200 text-center text-2xl;
   } 
   a, button {
-    @apply py-2 px-5 bg-slate-500 leading-relaxed text-white rounded-md shadow-md transition-colors duration-300 hover:bg-slate-700 focus:outline-none focus:ring focus:ring-slate-900 inline-block w-full text-center hover:enabled:cursor-pointer;
+    @apply py-2 px-5 bg-fuchsia-200 text-fuchsia-800 rounded-full shadow-md transition-colors duration-300 focus:outline-none focus:ring focus:ring-slate-900 inline-block w-full text-center hover:enabled:cursor-pointer;
   }
   [type="button"] {
-    @apply bg-slate-500
+    @apply bg-fuchsia-200;
   }
   h1 {
-    @apply text-4xl font-bold text-slate-700 text-center;
+    @apply text-4xl font-bold text-fuchsia-200 text-center;
   }
   h2 {
-    @apply text-3xl font-bold text-slate-700 text-center;
+    @apply text-3xl font-bold text-fuchsia-200 text-center;
   }
   h3 {
-    @apply text-2xl font-bold text-slate-700 text-center;
+    @apply text-2xl font-bold text-fuchsia-200 text-center;
   }
   h4 {
-    @apply text-xl font-bold text-slate-700 text-center;
+    @apply text-xl font-bold text-fuchsia-200 text-center;
   }
   .section {
     @apply max-w-lg m-auto space-y-5 md:space-y-7;
   }
+}
+
+.z--1 {
+  z-index: -1;
+}
+
+a:has(img) {
+  @apply rounded-xl;
 }

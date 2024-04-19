@@ -1,3 +1,3 @@
-<section class="bg-slate-100 rounded-full hover:shadow-md transition-shadow p-4 flex gap-4 justify-center overflow-x-auto overflow-mask-fade">
+<section class="border-8 border-solid border-fuchsia-200 rounded-3xl md:rounded-full hover:shadow-md transition-shadow p-4 bg-fuchsia-100/30 flex gap-4 justify-center flex-wrap">
   <slot></slot>
 </section>
