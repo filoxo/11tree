@@ -1,4 +1,4 @@
-<article class="inline-flex flex-col items-center gap-4 justify-center border-8 border-solid border-fuchsia-200 p-7 bg-fuchsia-100/60 rounded-xl hover:shadow-lg transition-shadow">
+<article class="inline-flex flex-col items-center gap-4 justify-center border-8 border-solid border-fuchsia-200 p-7 bg-fuchsia-100/60 rounded-xl transition-shadow shadow-inner	shadow-fuchsia-800/30">
   <header class="text-fuchsia-800"><slot name="content-top" @attributes></slot></header>
   <a :href="'https://www.youtube.com/watch?v=' + videoId" class="p-2">
     <img data-video="" :src="'https://img.youtube.com/vi/' + videoId + '/0.jpg'" alt="thumbnail" class="rounded aspect-video object-cover" draggable="false" /> 

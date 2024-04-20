@@ -1,1 +1,1 @@
-<img :src="src" :alt="alt" class="rounded-full w-32 h-32 border-8 border-solid border-fuchsia-200 m-auto" />
+<img :src="src" :alt="alt" class="rounded-full w-32 h-32 border-8 border-solid border-fuchsia-200 m-auto shadow-inner	shadow-fuchsia-800/30" />

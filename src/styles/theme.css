@@ -10,25 +10,26 @@
     @apply text-fuchsia-200 text-center text-2xl;
   } 
   a, button {
-    @apply py-2 px-5 bg-fuchsia-200 text-fuchsia-800 rounded-full shadow-md transition-colors duration-300 focus:outline-none focus:ring focus:ring-slate-900 inline-block w-full text-center hover:enabled:cursor-pointer;
+    @apply py-2 px-5 bg-fuchsia-200 text-fuchsia-800 rounded-full shadow-md transition-colors duration-300  inline-block w-full text-center hover:enabled:cursor-pointer;
+    @apply focus:outline-none focus:ring focus:ring-fuchsia-100 focus:ring-offset-4; 
   }
   [type="button"] {
     @apply bg-fuchsia-200;
   }
   h1 {
-    @apply text-4xl font-bold text-fuchsia-200 text-center;
+    @apply text-5xl font-bold text-fuchsia-200 text-center;
   }
   h2 {
-    @apply text-3xl font-bold text-fuchsia-200 text-center;
+    @apply text-4xl font-bold text-fuchsia-200 text-center;
   }
   h3 {
-    @apply text-2xl font-bold text-fuchsia-200 text-center;
+    @apply text-3xl font-bold text-fuchsia-200 text-center;
   }
   h4 {
     @apply text-xl font-bold text-fuchsia-200 text-center;
   }
   .section {
-    @apply max-w-lg m-auto space-y-5 md:space-y-7;
+    @apply max-w-lg m-auto space-y-9 md:space-y-7;
   }
 }
 
