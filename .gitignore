@@ -67,4 +67,5 @@ node_modules/
 
 # build output dir
 dist/
+_site/
 .DS_Store
