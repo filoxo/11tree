@@ -25,7 +25,7 @@ title: 11tree - a Linktree clone static site
 
   <h1>@11tree</h1>
 
-  <p>A Linktree-clone static site. Powered by 11ty & Tailwind.</p>
+  <p>A Linktree-clone static site.</p>
 
   <!-- Use regular HTML links... -->
   <a href="https://github.com/filoxo/11tree">More info on GitHub</a>
