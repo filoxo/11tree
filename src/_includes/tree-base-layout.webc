@@ -8,7 +8,7 @@
     <link webc:keep rel="stylesheet" href="/styles/theme.css" />
     <link webc:keep rel="stylesheet" :href="$data.icon.url" />
 	</head>
-	<body class="m-0">
+	<body class="m-0 bg-theme">
     <main @raw="content" class="p-5 md:py-12 md:px-9 space-y-12"></main>
     <footer>
       <p class="text-center text-sm text-gray-500">
@@ -16,5 +16,4 @@
       </p>
     </footer>
   </body>
-  <div class="fixed top-0 left-0 w-full h-full bg-cover blur-sm bg-[url('/static/jene-stephaniuk-GK8p3BWjD4g-unsplash.webp')] lg:bg-[url('/static/jene-stephaniuk-GK8p3BWjD4g-unsplash.lg.webp')] z--1 scale-110"></div>
 </html>
