@@ -6,12 +6,11 @@
     <meta name="view-transition" content="same-origin" />
     <title @text="title"></title>
     <link webc:keep rel="stylesheet" href="/styles/theme.css" />
-    <link webc:keep rel="stylesheet" :href="$data.icon.url" />
 	</head>
 	<body class="m-0 bg-theme">
     <main @raw="content" class="p-5 md:py-12 md:px-9 space-y-12"></main>
-    <footer>
-      <p class="text-center text-sm text-gray-500">
+    <footer class="pb-12">
+      <p>
         &copy; <template @text="currentYear" webc:nokeep></template>
       </p>
     </footer>

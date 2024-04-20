@@ -1,5 +1,0 @@
-<script webc:setup>
-  if(!$data.icon.prefix) throw new Error('tree-icon requires an `icon.prefix` to be defined in the global config!');
-</script>
-
-<span :class="'icon icon--' + $data.icon.prefix + ' icon--' + $data.icon.prefix + '--' + name + ' text-primary dark:text-white text-2xl'" aria-hidden="true"></span>

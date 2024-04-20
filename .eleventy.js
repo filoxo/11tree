@@ -44,28 +44,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("author", "Your name here");
   eleventyConfig.addGlobalData("title", "Your site title here");
 
-  /**
-   * No-code Icons
-   * @see https://iconify.design/docs/usage/css/no-code/
-   *
-   * Just need to select a
-   */
-  eleventyConfig.addGlobalData("icon", {
-    prefix: "ion",
-    list: new Set([
-      "logo-youtube",
-      "logo-twitter",
-      "logo-twitter-x",
-      "logo-instagram",
-      "logo-tiktok",
-      "logo-reddit",
-    ]),
-    get url() {
-      const iconListParam = encodeURIComponent(Array.from(this.list).join(","));
-      return `https://api.iconify.design/${this.prefix}.css?icons=${iconListParam}`;
-    },
-  });
-
   return {
     dir: {
       input: "src",
