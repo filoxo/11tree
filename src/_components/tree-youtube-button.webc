@@ -1,7 +1,7 @@
-<article class="inline-flex flex-col items-center gap-4 justify-center bg-slate-100 p-7 rounded-xl hover:shadow-lg transition-shadow">
+<article class="inline-flex flex-col items-center gap-4 justify-center bg-stone-300 p-7 rounded-xl hover:shadow-lg transition-shadow">
   <header><slot name="content-top" @attributes></slot></header>
   <a :href="'https://www.youtube.com/watch?v=' + videoId" class="p-2">
-    <img :src="'https://img.youtube.com/vi/' + videoId + '/0.jpg'" alt="thumbnail" class="rounded aspect-video object-cover" draggable="false" /> 
+    <img :src="'https://img.youtube.com/vi/' + videoId + '/0.jpg'" alt="thumbnail" class="rounded aspect-video object-cover" draggable="false" />
   </a>
   <footer><slot name="content-bottom" @attributes></slot></footer>
 </article>

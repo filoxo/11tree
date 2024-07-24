@@ -21,26 +21,20 @@ title: 11tree - a Linktree clone static site
 </nav>
 
 <section class="section">
-  <tree-avatar src="/static/profile.webp" alt="⭐️ @11tree on GitHub"></tree-avatar>
+  <tree-avatar src="/static/profile2.webp" alt="⭐️ @11tree on GitHub"></tree-avatar>
 
   <h1>@11tree</h1>
 
   <p>A Linktree-clone static site. Powered by 11ty & Tailwind.</p>
 
-  <!-- Use regular HTML links... -->
-  <a href="https://www.youtube.com/channel/UC9J3v2J1ZJ1vJ5J5Y1-3J5A">More info...</a>
+  <tree-link-pill href="#" class>Donate spare rupees!</tree-link-pill>
 
-  <!-- ... or use the tree-link component -->
-  <tree-link href="https://www.youtube.com/channel/UC9J3v2J1ZJ1vJ5J5Y1-/">
-    <tree-icon name="logo-youtube"></tree-icon>
-    YouTube Channel
-  </tree-link>
-
-  <!-- tree-youtube-button is a simplistic YouTube embed link (@todo - handle any video format?) --> 
   <tree-youtube-button video-id="JK7mcDIXQyo">
     <h3 slot="content-top">My Favorite Video!!</h3>
-    <span slot="content-bottom" class="text-left"> 
+    <span slot="content-bottom" class="text-left">
       lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </span>
-  </tree-link>
+  </tree-youtube-button>
+
+  <img src="/static/triforce-spin.gif" alt="Spinning triforce, by lilbluedemonart on Deviantart. https://www.deviantart.com/lilbluedemon/art/Zelda-3D-Triforce-511327869" class="w-20 h-20 m-auto" />
 </section>
