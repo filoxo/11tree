@@ -1,40 +1,38 @@
 ---
 layout: "tree-base-layout"
-title: 11tree - a Linktree clone static site
+title: Design Agency - Empowering Brand with Cutting-Edge Design Solutions
 ---
 
-<nav>
-  <tree-pill-group>
-    <tree-link-pill>
-      <tree-icon name="logo-instagram"></tree-icon>
-      @11tree
-    </tree-link-pill>
-    <tree-link-pill>
-      <tree-icon name="logo-youtube"></tree-icon>
-      u/11tree
-    </tree-link-pill>
-    <tree-link-pill>
-      <tree-icon name="logo-twitter"></tree-icon>
-      x.com/11tree
-    </tree-link-pill>
-  </tree-pill-group>
-</nav>
-
-<section class="section">
-  <tree-avatar src="/static/profile2.webp" alt="⭐️ @11tree on GitHub"></tree-avatar>
-
-  <h1>@11tree</h1>
-
-  <p>A Linktree-clone static site. Powered by 11ty & Tailwind.</p>
-
-  <tree-link-pill href="#" class>Donate spare rupees!</tree-link-pill>
-
-  <tree-youtube-button video-id="JK7mcDIXQyo">
-    <h3 slot="content-top">My Favorite Video!!</h3>
-    <span slot="content-bottom" class="text-left">
-      lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </span>
-  </tree-youtube-button>
-
-  <img src="/static/triforce-spin.gif" alt="Spinning triforce, by lilbluedemonart on Deviantart. https://www.deviantart.com/lilbluedemon/art/Zelda-3D-Triforce-511327869" class="w-20 h-20 m-auto" />
-</section>
+<div class="min-h-screen text-white flex flex-col">
+  <!-- Hero Section -->
+  <section class="flex-1 flex flex-col items-center justify-center text-center px-6 py-12">
+    <!-- Hero Content -->
+    <div class="max-w-4xl mx-auto">
+      <!-- Main Heading with Gradient Text -->
+      <h1 class="text-white text-5xl md:text-6xl font-bold mb-6">
+        <span class="block">Empowering Brand</span>
+        <span class="block">with
+          <span
+            class="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-teal-400">Cutting-Edge</span></span>
+        <span class="block italic font-light">Design Solutions</span>
+      </h1>
+      <!-- Subheading -->
+      <p class="text-lg md:text-xl mb-12 text-gray-300">
+        Turn your vision into reality with Pixel. We blend design, strategy, and
+        technology to build powerful digital experiences that elevate your
+        brand.
+      </p>
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <tree-link-pill href="#"
+          class="bg-white text-black px-8 py-3 rounded-md font-medium hover:bg-gray-200 transition duration-300">
+          START A PROJECT
+        </tree-link-pill>
+        <tree-link-pill href="#"
+          class="bg-transparent border border-white px-8 py-3 rounded-md font-medium hover:bg-white/10 transition duration-300">
+          OUR SERVICES
+        </tree-link-pill>
+      </div>
+      </div>
+      </section>
+</div>
