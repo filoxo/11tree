@@ -1,0 +1,15 @@
+<script webc:type="js">
+  const variant = this.variant || 'primary';
+  const baseClasses = 'inline-flex w-auto items-center justify-center gap-2 rounded-md px-8 py-3 font-medium transition-all duration-300';
+  
+  const variantClasses = {
+    primary: 'bg-white text-black hover:bg-gray-200',
+    secondary: 'bg-transparent border border-white hover:bg-white/10'
+  };
+  
+  const buttonClasses = `${baseClasses} ${variantClasses[variant]} ${this.className || ''}`;
+  
+  `<a class="${buttonClasses}" href="${this.href || '#'}">
+    <slot></slot>
+  </a>`;
+</script>
