@@ -1,11 +1,11 @@
 // const eleventySass = require("eleventy-sass");
-const PostCSSPlugin = require("eleventy-plugin-postcss");
-const pluginWebc = require("@11ty/eleventy-plugin-webc");
-const htmlminifier = require("html-minifier-terser");
+import PostCSSPlugin from "eleventy-plugin-postcss";
+import pluginWebc from "@11ty/eleventy-plugin-webc";
+import htmlminifier from "html-minifier-terser";
 
 const IS_PROD_BUILD = process.env.NODE_ENV === "production";
 
-module.exports = function (eleventyConfig) {
+export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/static");
   eleventyConfig.addPlugin(PostCSSPlugin);
   eleventyConfig.addPlugin(pluginWebc, {
@@ -58,7 +58,7 @@ module.exports = function (eleventyConfig) {
    */
   eleventyConfig.addGlobalData("icon", {
     theme: "ion",
-    list: ["logo-youtube", "logo-twitter", "logo-instagram"],
+    list: ["logo-youtube", "logo-twitter", "logo-instagram", "arrow-forward"],
     get url() {
       const iconListParam = encodeURIComponent(this.list.join(","));
       return `https://api.iconify.design/${this.theme}.css?icons=${iconListParam}`;
