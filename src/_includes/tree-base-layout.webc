@@ -6,7 +6,7 @@
     <meta name="view-transition" content="same-origin" />
     <title @text="title"></title>
     <link webc:keep rel="stylesheet" href="/styles/theme.css" />
-    <link webc:keep rel="stylesheet" :href="$data.icon.url" />
+    <link webc:keep rel="stylesheet" :href="$data.iconSet.url" />
 	</head>
 	<body class="m-5 md:m-7 space-y-9">
     <main @raw="content" class="space-y-9"></main>

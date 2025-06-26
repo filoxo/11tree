@@ -1,1 +1,8 @@
-<span :class="'icon icon--' + $data.icon.theme + ' icon--' + $data.icon.theme + '--' + name + ' text-primary dark:text-white text-2xl'" aria-hidden="true"></span>
+<script webc:type="js">
+  const iconSize = size || "text-3xl";
+  if (!name) throw new Error("<site-icon> requires a name prop!");
+  if(!$data.iconSet.names.includes(name))
+    throw new Error(`icon '${name}' is missing from list! add it in .eleventy config`);
+
+  `<span class="icon icon--${$data.iconSet.theme} icon--${$data.iconSet.theme}--${name} ${iconSize}" aria-hidden="true">&nbsp;</span>`;
+</script>

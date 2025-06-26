@@ -47,23 +47,39 @@ module.exports = function (eleventyConfig) {
   /**
    * No-code icons, using Iconify api
    * @docs https://iconify.design/docs/usage/css/no-code/
-   * @docs https://icon-sets.iconify.design/?keyword=ion
+   * @docs https://icon-sets.iconify.design/ion/?keyword=ion
    *
    * 1. default theme is "ion", change it to any other theme at icon-sets.iconify.design
    * 2. explictly list the icons you want to use. this helps save bandwidth and forces you to be intentional about which icons are loaded
    * 3. use with `tree-icon` webc component
    *
-   * @example <tree-icon name="logo-youtube"></tree-icon
+   * @example <tree-icon name="logo-youtube"></tree-icon>
    * @see src/_components/tree-icon.webc
    */
-  eleventyConfig.addGlobalData("icon", {
+  const icons = {
     theme: "ion",
-    list: ["logo-youtube", "logo-twitter", "logo-instagram"],
+    names: [
+      "logo-instagram",
+      "logo-facebook",
+      "logo-twitter",
+      "logo-whatsapp",
+      "logo-youtube",
+      "home-outline",
+      "business-outline",
+      "sunny-outline",
+      "call-sharp",
+      "call-outline",
+      "phone-portrait-outline",
+      "chevron-back",
+      "chevron-forward",
+    ],
     get url() {
-      const iconListParam = encodeURIComponent(this.list.join(","));
+      const iconListParam = encodeURIComponent(this.names.join(","));
       return `https://api.iconify.design/${this.theme}.css?icons=${iconListParam}`;
     },
-  });
+  };
+
+  eleventyConfig.addGlobalData("iconSet", icons);
 
   return {
     dir: {
