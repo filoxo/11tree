@@ -5,29 +5,33 @@
  * This is extremely powerful if you know semantic html, accessibility, and good design principles.
  */
 @layer components {
-    body {
-        @apply text-slate-800 text-center bg-stone-50;
-    }
-    a,
-    button {
-        @apply py-2 px-5 bg-gray-400 leading-relaxed tracking-wider uppercase font-semibold text-sm text-white rounded-md shadow-md transition-colors duration-300 hover:bg-gray-600 focus:outline-none focus:ring ring-offset-1 focus:ring-black inline-block w-full text-center hover:enabled:cursor-pointer;
-    }
-    [type="button"] {
-        @apply bg-emerald-900;
-    }
-    h1 {
-        @apply text-4xl font-bold text-slate-800 text-center;
-    }
-    h2 {
-        @apply text-3xl font-bold text-slate-800 text-center;
-    }
-    h3 {
-        @apply text-2xl font-bold text-slate-800 text-center;
-    }
-    h4 {
-        @apply text-xl font-bold text-slate-800 text-center;
-    }
-    .section {
-        @apply max-w-lg m-auto space-y-5 md:space-y-7;
-    }
+  body.gradient-bg {
+    /* Soft pastel gradient background */
+    background: linear-gradient(135deg, #e8eaf6 0%, #f8bbd0 40%, #ffe0b2 100%);
+    /* convert background to tailwind classes */
+    @apply bg-gradient-to-tr from-white via-40% via-pink-300 to-orange-200;
+    @apply h-screen p-4;
+  }
+  a,
+  button {
+    @apply py-2 px-5 leading-none tracking-wider uppercase font-semibold text-sm text-white rounded-full shadow-md transition-colors duration-300 hover:bg-orange-200 focus:outline-none focus:ring ring-offset-1 focus:ring-black inline-block w-full text-center hover:enabled:cursor-pointer;
+  }
+  [type="button"] {
+    @apply bg-emerald-900;
+  }
+  h1 {
+    @apply text-4xl font-bold text-slate-800 text-center;
+  }
+  h2 {
+    @apply text-3xl font-bold text-slate-800 text-center;
+  }
+  h3 {
+    @apply text-2xl font-bold text-slate-800 text-center;
+  }
+  h4 {
+    @apply text-xl font-bold text-slate-800 text-center;
+  }
+  .section {
+    @apply max-w-lg m-auto space-y-5 md:space-y-7;
+  }
 }

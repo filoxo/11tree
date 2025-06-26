@@ -3,20 +3,6 @@ layout: "tree-base-layout"
 title: 11tree - a Linktree clone static site
 ---
 
-<nav>
-  <tree-pill-group>
-    <tree-link-pill>
-      <tree-icon name="logo-instagram"></tree-icon>
-    </tree-link-pill>
-    <tree-link-pill>
-      <tree-icon name="logo-youtube"></tree-icon>
-    </tree-link-pill>
-    <tree-link-pill>
-      <tree-icon name="logo-twitter"></tree-icon>
-    </tree-link-pill>
-  </tree-pill-group>
-</nav>
-
 <section class="flex flex-col items-center w-full space-y-6">
   <tree-avatar src="/static/brooke-cagle-oTweoxMKdkA-avatar.jpg" alt="@11tree avatar" class="w-24 h-24 rounded-full shadow-lg -mt-16 border-4 border-white object-cover"></tree-avatar>
 
@@ -26,20 +12,13 @@ title: 11tree - a Linktree clone static site
 
   <div class="w-full flex flex-col gap-4 mt-2">
     <tree-link-pill href="#">
-      <span slot="icon">🌅</span>
-      Travel Blog
+      Tour Dates
     </tree-link-pill>
     <tree-link-pill href="#">
-      <span slot="icon">🏕️</span>
-      Travel Tips
+      Our Discord
     </tree-link-pill>
     <tree-link-pill href="#">
-      <span slot="icon">🎒</span>
-      Hiking Equipment
-    </tree-link-pill>
-    <tree-link-pill href="#">
-      <span slot="icon">📷</span>
-      Camera Equipment
+      Website
     </tree-link-pill>
   </div>
 </section>

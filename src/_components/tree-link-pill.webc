@@ -1,5 +1,7 @@
-
-<a class="w-full flex items-center gap-3 leading-0 bg-white text-slate-800 shadow-lg rounded-full p-4 text-lg font-medium hover:bg-gray-100 transition" :href={href}>
+<a
+  class="w-full py-4 px-6 rounded-full shadow-lg bg-white/90 text-gray-900 font-semibold text-lg text-center transition-all duration-200 hover:bg-white hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-200"
+  :href="{href}"
+>
   <span class="text-2xl"><slot name="icon"></slot></span>
-  <span class="block  flex-1 *:block"><slot></slot></span>
+  <span class="block flex-1 *:block"><slot></slot></span>
 </a>
