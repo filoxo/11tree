@@ -1,6 +1,6 @@
-module.exports = ({ env }) => ({
+export default ({ env }) => ({
   plugins: {
-    tailwindcss: {},
+    "@tailwindcss/postcss": {},
     autoprefixer: {},
     "postcss-import": {},
     "@csstools/postcss-minify": env === "production" ? {} : false,

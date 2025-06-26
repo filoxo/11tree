@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /**
  * DIY classless theme - leverage Tailwind's classes to compose your own classless theme!

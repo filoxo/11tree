@@ -1,13 +1,13 @@
 // const eleventySass = require("eleventy-sass");
-const PostCSSPlugin = require("eleventy-plugin-postcss");
-const pluginWebc = require("@11ty/eleventy-plugin-webc");
-const htmlminifier = require("html-minifier-terser");
+import postcssPlugin from "eleventy-plugin-postcss";
+import pluginWebc from "@11ty/eleventy-plugin-webc";
+import htmlminifier from "html-minifier-terser";
 
 const IS_PROD_BUILD = process.env.NODE_ENV === "production";
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/static");
-  eleventyConfig.addPlugin(PostCSSPlugin);
+  eleventyConfig.addPlugin(postcssPlugin);
   eleventyConfig.addPlugin(pluginWebc, {
     /**
      * Global no-import Components configuration - any webc components in here can be used in any template without needing to import.
@@ -36,7 +36,7 @@ module.exports = function (eleventyConfig) {
             preserveLineBreaks: true,
             removeEmptyElements: true,
             removeRedundantAttributes: true,
-          },
+          }
     );
   });
 
@@ -82,6 +82,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addGlobalData("iconSet", icons);
 
   return {
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "webc",
     dir: {
       input: "src",
     },
