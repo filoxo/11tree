@@ -4,5 +4,5 @@
   if(!$data.iconSet.names.includes(name))
     throw new Error(`icon '${name}' is missing from list! add it in .eleventy config`);
 
-  `<span class="icon icon--${$data.iconSet.theme} icon--${$data.iconSet.theme}--${name} ${iconSize}" aria-hidden="true">&nbsp;</span>`;
+  `<span class="icon icon--${$data.iconSet.theme} icon--${$data.iconSet.theme}--${name} ${iconSize} block" aria-hidden="true">&nbsp;</span>`;
 </script>

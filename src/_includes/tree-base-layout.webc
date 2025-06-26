@@ -8,12 +8,13 @@
     <link webc:keep rel="stylesheet" href="/styles/theme.css" />
     <link webc:keep rel="stylesheet" :href="$data.iconSet.url" />
 	</head>
-	<body class="m-5 md:m-7 space-y-9">
-    <main @raw="content" class="space-y-9"></main>
-    <footer>
-      <p class="text-center text-sm text-gray-500">
-        &copy; <template @text="currentYear" webc:nokeep></template>
-      </p>
-    </footer>
-  </body>
+	<body class="relative  flex items-center justify-center bg-cover bg-center" style="background-image: url('/static/kelly-sikkema-cTQNRug8dfE-unsplash.jpg');">
+  <div class="absolute inset-0 bg-gradient-to-b from-white/70 to-white/10 pointer-events-none z-0"></div>
+  <main @raw="content" class="relative z-10 w-full max-w-md rounded-3xl shadow-2xl bg-white/30 backdrop-blur-md p-6 flex flex-col items-center space-y-8 mt-8 mb-8"></main>
+  <footer class="absolute bottom-0 left-0 w-full z-10">
+    <p class="text-center text-sm text-gray-500">
+      &copy; <template @text="currentYear" webc:nokeep></template>
+    </p>
+  </footer>
+</body>
 </html>

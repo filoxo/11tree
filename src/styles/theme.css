@@ -10,7 +10,7 @@
     }
     a,
     button {
-        @apply py-2 px-5 bg-emerald-900 leading-relaxed tracking-wider uppercase font-semibold text-sm text-white rounded-md shadow-md transition-colors duration-300 hover:bg-emerald-950 focus:outline-none focus:ring ring-offset-1 focus:ring-emerald-600 inline-block w-full text-center hover:enabled:cursor-pointer;
+        @apply py-2 px-5 bg-gray-400 leading-relaxed tracking-wider uppercase font-semibold text-sm text-white rounded-md shadow-md transition-colors duration-300 hover:bg-gray-600 focus:outline-none focus:ring ring-offset-1 focus:ring-black inline-block w-full text-center hover:enabled:cursor-pointer;
     }
     [type="button"] {
         @apply bg-emerald-900;
