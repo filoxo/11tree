@@ -64,6 +64,8 @@ export default function (eleventyConfig) {
       "logo-twitter",
       "logo-whatsapp",
       "logo-youtube",
+      "logo-music",
+      "musical-notes-outline",
       "home-outline",
       "business-outline",
       "sunny-outline",
