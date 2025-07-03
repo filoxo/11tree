@@ -14,13 +14,13 @@
     ></div>
     <main
       @raw="content"
-      class="relative w-full max-w-md rounded-3xl shadow-2xl bg-white/30 backdrop-blur-md p-6 flex flex-col items-center space-y-8 mx-auto my-12"
+      class="relative w-full max-w-md rounded-3xl shadow-2xl bg-white/30 backdrop-blur-md p-6 flex flex-col items-center space-y-8 mx-auto my-12 border-4 border-solid border-white"
     ></main>
     <div class="flex justify-between gap-10 max-w-sm mx-auto">
-      <a href="#" class="p-4"><tree-icon name="logo-twitter"></tree-icon></a>
-      <a href="#" class="p-4"><tree-icon name="logo-facebook"></tree-icon></a>
-      <a href="#" class="p-4"><tree-icon name="logo-instagram"></tree-icon></a>
-      <a href="#" class="p-4"
+      <a href="#" class="p-4 border-4 border-solid border-white"><tree-icon name="logo-twitter"></tree-icon></a>
+      <a href="#" class="p-4 border-4 border-solid border-white"><tree-icon name="logo-facebook"></tree-icon></a>
+      <a href="#" class="p-4 border-4 border-solid border-white"><tree-icon name="logo-instagram"></tree-icon></a>
+      <a href="#" class="p-4 border-4 border-solid border-white"
         ><tree-icon name="musical-notes-outline"></tree-icon
       ></a>
     </div>

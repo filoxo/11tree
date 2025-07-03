@@ -3,16 +3,17 @@ layout: "tree-base-layout"
 title: 11tree - a Linktree clone static site
 ---
 
-<section class="flex flex-col items-center w-full space-y-6">
+<section class="flex flex-col items-center w-full space-y-4">
   <tree-avatar src="/static/brooke-cagle-oTweoxMKdkA-avatar.jpg" alt="@11tree avatar" class="w-24 h-24 rounded-full shadow-lg -mt-16 border-4 border-white object-cover"></tree-avatar>
 
-  <h1 class="text-2xl font-bold text-gray-900 text-center">@11tree</h1>
+  <h1 class="text-4xl font-bold text-white text-center">@11tree</h1>
 
-  <p class="text-base text-gray-700 text-center max-w-xs">an innovative solar design practice that brings solar energy into daily life.</p>
+  <p class="text-base text-orange-900 text-center max-w-xs">"sieze and enjoy the day" ✌️ out now on all platforms</p>
 
   <div class="w-full flex flex-col gap-4 mt-2">
     <tree-link-pill href="#">
       Tour Dates
+      asdf
     </tree-link-pill>
     <tree-link-pill href="#">
       Our Discord
