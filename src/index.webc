@@ -18,7 +18,7 @@ title: 11tree - a Linktree clone static site
 </nav>
 
 <section class="section">
-  <tree-avatar src="/static/dalle-ariel-2.webp" alt="⭐️ @11tree on GitHub"></tree-avatar>
+  <tree-avatar src="/static/profile.webp" alt="⭐️ @11tree on GitHub"></tree-avatar>
 
   <h1>@11tree</h1>
 
