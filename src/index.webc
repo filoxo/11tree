@@ -22,7 +22,7 @@ title: 11tree - a Linktree clone static site
 
   <h1 class="text-2xl font-bold text-gray-900 text-center">@11tree</h1>
 
-  <p class="text-base text-gray-700 text-center max-w-xs">an innovative solar design practice that brings solar energy into daily life.</p>
+  <p class="text-base text-gray-700 text-center max-w-xs">an innovative travel practice that brings travel inspiration into daily life.</p>
 
   <div class="w-full flex flex-col gap-4 mt-2">
     <tree-link-pill href="#">
@@ -32,10 +32,6 @@ title: 11tree - a Linktree clone static site
     <tree-link-pill href="#">
       <span slot="icon">🏕️</span>
       Travel Tips
-    </tree-link-pill>
-    <tree-link-pill href="#">
-      <span slot="icon">🎒</span>
-      Hiking Equipment
     </tree-link-pill>
     <tree-link-pill href="#">
       <span slot="icon">📷</span>

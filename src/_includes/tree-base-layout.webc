@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="view-transition" content="same-origin" />
     <title @text="title"></title>
     <link webc:keep rel="stylesheet" href="/styles/theme.css" />
     <link webc:keep rel="stylesheet" :href="$data.iconSet.url" />
-	</head>
-	<body class="relative  flex items-center justify-center bg-cover bg-center" style="background-image: url('/static/kelly-sikkema-cTQNRug8dfE-unsplash.jpg');">
-  <div class="absolute inset-0 bg-gradient-to-b from-white/70 to-white/10 pointer-events-none z-0"></div>
-  <main @raw="content" class="relative z-10 w-full max-w-md rounded-3xl shadow-2xl bg-white/30 backdrop-blur-md p-6 flex flex-col items-center space-y-8 mt-8 mb-8"></main>
-  <footer class="absolute bottom-0 left-0 w-full z-10">
-    <p class="text-center text-sm text-gray-500">
-      &copy; <template @text="currentYear" webc:nokeep></template>
-    </p>
-  </footer>
-</body>
+  </head>
+  <body
+    class="bg-cover bg-center bg-[url('/static/kelly-sikkema-cTQNRug8dfE-unsplash.jpg')] my-6"
+  >
+    <main
+      @raw="content"
+      class="w-full max-w-md rounded-3xl shadow-2xl bg-white/30 backdrop-blur-md p-6 flex flex-col items-center space-y-8 mx-auto"
+    ></main>
+    <footer>
+      <p class="text-center text-sm text-white p-4">
+        &copy; <template @text="currentYear" webc:nokeep></template>
+      </p>
+    </footer>
+  </body>
 </html>

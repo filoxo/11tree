@@ -1,1 +1,1 @@
-<img :src="src" :alt="alt" class="rounded-full w-40 h-40 border-8 border-solid border-white m-auto" />
+<img :src="src" :alt="alt" class="rounded-full w-40 h-40 border-8 border-solid border-white mx-auto" />
