@@ -8,10 +8,10 @@
     <link webc:keep rel="stylesheet" href="/styles/theme.css" />
     <link webc:keep rel="stylesheet" :href="$data.iconSet.url" />
 	</head>
-	<body class="m-5 md:m-7 space-y-9">
+	<body class="m-5 md:m-7 space-y-9 bg-theme">
     <main @raw="content" class="space-y-9"></main>
     <footer>
-      <p class="text-center text-sm text-gray-500">
+      <p class="inline px-4 py-2 text-center text-sm text-fuchsia-900 font-bold bg-fuchsia-200 rounded-full">
         &copy; <template @text="currentYear" webc:nokeep></template>
       </p>
     </footer>

@@ -5,36 +5,36 @@ title: 11tree - a Linktree clone static site
 
 <nav>
   <tree-pill-group>
-    <tree-link-pill>
-      <tree-icon name="logo-instagram"></tree-icon>
+    <tree-link-pill href="#">
       @11tree
     </tree-link-pill>
-    <tree-link-pill>
-      <tree-icon name="logo-youtube"></tree-icon>
+    <tree-link-pill href="#">
       u/11tree
     </tree-link-pill>
-    <tree-link-pill>
-      <tree-icon name="logo-twitter"></tree-icon>
-      x.com/11tree
+    <tree-link-pill href="#">
+      x.com/@11tree
     </tree-link-pill>
   </tree-pill-group>
 </nav>
 
 <section class="section">
-  <tree-avatar src="/static/profile2.webp" alt="⭐️ @11tree on GitHub"></tree-avatar>
+  <tree-avatar src="/static/dalle-ariel-2.webp" alt="⭐️ @11tree on GitHub"></tree-avatar>
 
   <h1>@11tree</h1>
 
-  <p>A Linktree-clone static site. Powered by 11ty & Tailwind.</p>
+  <p>Ariel - an 11tree theme</p>
 
-  <tree-link-pill href="#" class>Donate spare rupees!</tree-link-pill>
+  <tree-link href="https://github.com/filoxo/11tree">
+    More info on GitHub
+  </tree-link>
 
-  <tree-youtube-button video-id="JK7mcDIXQyo">
-    <h3 slot="content-top">My Favorite Video!!</h3>
-    <span slot="content-bottom" class="text-left">
-      lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  <tree-link href="https://suno.com/song/6aa72b39-db7d-4899-9652-ea4879577073" class="animate-bounce">Listen to my latest song!</tree-link>
+
+  <!-- tree-youtube-button is a simplistic YouTube embed link (@todo - handle any video format?) --> 
+  <tree-youtube-button video-id="GKP9NU1On-4">
+    <h3 slot="content-top" class="text-fuchsia-800">Check this amazing playlist!</h3>
+    <span slot="content-bottom" class="text-left text-fuchsia-800"> 
+      lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </span>
-  </tree-youtube-button>
-
-  <img src="/static/triforce-spin.gif" alt="Spinning triforce, by lilbluedemonart on Deviantart. https://www.deviantart.com/lilbluedemon/art/Zelda-3D-Triforce-511327869" class="w-20 h-20 m-auto" />
+  </tree-link>
 </section>

@@ -5,29 +5,43 @@
  * This is extremely powerful if you know semantic html, accessibility, and good design principles.
  */
 @layer components {
-    body {
-        @apply text-slate-800 text-center bg-stone-50;
-    }
-    a,
-    button {
-        @apply py-2 px-5 bg-emerald-900 leading-relaxed tracking-wider uppercase font-semibold text-sm text-white rounded-md shadow-md transition-colors duration-300 hover:bg-emerald-950 focus:outline-none focus:ring ring-offset-1 focus:ring-emerald-600 inline-block w-full text-center hover:enabled:cursor-pointer;
-    }
-    [type="button"] {
-        @apply bg-emerald-900;
-    }
-    h1 {
-        @apply text-4xl font-bold text-slate-800 text-center;
-    }
-    h2 {
-        @apply text-3xl font-bold text-slate-800 text-center;
-    }
-    h3 {
-        @apply text-2xl font-bold text-slate-800 text-center;
-    }
-    h4 {
-        @apply text-xl font-bold text-slate-800 text-center;
-    }
-    .section {
-        @apply max-w-lg m-auto space-y-5 md:space-y-7;
-    }
+  body {
+    @apply text-fuchsia-100 text-center text-2xl;
+  } 
+  a, button {
+    @apply py-2 px-5 bg-fuchsia-200 text-fuchsia-800 rounded-full shadow-md transition-colors duration-300  inline-block w-full text-center hover:enabled:cursor-pointer;
+    @apply focus:outline-none focus:ring focus:ring-fuchsia-100 focus:ring-offset-4; 
+  }
+  [type="button"] {
+    @apply bg-fuchsia-200;
+  }
+  h1 {
+    @apply text-5xl font-bold text-fuchsia-100 text-center;
+  }
+  h2 {
+    @apply text-4xl font-bold text-fuchsia-100 text-center;
+  }
+  h3 {
+    @apply text-3xl font-bold text-fuchsia-100 text-center;
+  }
+  h4 {
+    @apply text-xl font-bold text-fuchsia-100 text-center;
+  }
+  .section {
+    @apply max-w-lg m-auto space-y-9 md:space-y-7;
+  }
+}
+
+.z--1 {
+  z-index: -1;
+}
+
+a:has(img) {
+  @apply rounded-xl;
+}
+ 
+/* CSS-only bg - credit https://www.magicpattern.design/tools/css-backgrounds */
+.bg-theme {
+  background-color: #ef9fef;
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #ef9fef 2rem ), repeating-linear-gradient( #86198f55, #a30098 );
 }

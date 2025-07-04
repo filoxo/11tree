@@ -1,4 +1,3 @@
-
 <a class="inline-flex w-auto items-center justify-center gap-4 rounded-full" :href={href}>
   <slot></slot>
 </a>
