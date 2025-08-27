@@ -10,7 +10,6 @@
     background: linear-gradient(135deg, #e8eaf6 0%, #f8bbd0 40%, #ffe0b2 100%);
     /* convert background to tailwind classes */
     @apply bg-gradient-to-tr from-white via-40% via-pink-300 to-orange-200;
-    @apply h-screen p-4;
   }
   a,
   button {

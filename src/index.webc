@@ -8,9 +8,9 @@ title: 11tree - a Linktree clone static site
 
   <h1 class="text-4xl font-bold text-white text-center">@11tree</h1>
 
-  <p class="text-base text-orange-900 text-center max-w-xs">"sieze and enjoy the day" ✌️ out now on all platforms</p>
+  <p class="text-2xl text-orange-900 text-center max-w-xs">"sieze and enjoy the day" ✌️ out now on all platforms</p>
 
-  <div class="w-full flex flex-col gap-4 mt-2">
+  <div class="w-full flex flex-col gap-2 md:gap-4 mt-2">
     <tree-link-pill href="#">
       Tour Dates
       asdf

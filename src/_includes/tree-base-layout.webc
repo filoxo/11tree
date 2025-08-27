@@ -8,15 +8,15 @@
     <link webc:keep rel="stylesheet" href="/styles/theme.css" />
     <link webc:keep rel="stylesheet" :href="$data.iconSet.url" />
   </head>
-  <body class="gradient-bg relative text-white">
+  <body class="gradient-bg relative text-white min-w-screen min-h-screen px-6">
     <div
       class="absolute inset-0 bg-gradient-to-b from-white/70 to-white/10 pointer-events-none z-0"
     ></div>
     <main
       @raw="content"
-      class="relative w-full max-w-md rounded-3xl shadow-2xl bg-white/30 backdrop-blur-md p-6 flex flex-col items-center space-y-8 mx-auto my-12 border-4 border-solid border-white"
+      class="relative w-full max-w-md rounded-3xl shadow-2xl bg-white/30 backdrop-blur-md p-6 flex flex-col items-center space-y-8 mx-auto my-6 md:my-12 border-4 border-solid border-white"
     ></main>
-    <div class="flex justify-between gap-10 max-w-sm mx-auto">
+    <div class="flex justify-between gap-6 md:gap-10 max-w-sm mx-auto">
       <a href="#" class="p-4 border-4 border-solid border-white">
         <tree-icon name="logo-twitter"></tree-icon>
         <span class="sr-only">Twitter</span>
@@ -34,7 +34,7 @@
         <span class="sr-only">Spotify</span>
       </a>
     </div>
-    <footer class="absolute bottom-0 left-0 w-full">
+    <footer class="my-4 w-full">
       <p class="text-center text-xl mb-8 font-bold text-shadow-sm">
         &copy; <template @text="currentYear" webc:nokeep></template>
       </p>
