@@ -8,7 +8,7 @@
     <link webc:keep rel="stylesheet" href="/styles/theme.css" />
     <link webc:keep rel="stylesheet" :href="$data.iconSet.url" />
   </head>
-  <body class="gradient-bg relative">
+  <body class="gradient-bg relative text-white">
     <div
       class="absolute inset-0 bg-gradient-to-b from-white/70 to-white/10 pointer-events-none z-0"
     ></div>
@@ -17,15 +17,25 @@
       class="relative w-full max-w-md rounded-3xl shadow-2xl bg-white/30 backdrop-blur-md p-6 flex flex-col items-center space-y-8 mx-auto my-12 border-4 border-solid border-white"
     ></main>
     <div class="flex justify-between gap-10 max-w-sm mx-auto">
-      <a href="#" class="p-4 border-4 border-solid border-white"><tree-icon name="logo-twitter"></tree-icon></a>
-      <a href="#" class="p-4 border-4 border-solid border-white"><tree-icon name="logo-facebook"></tree-icon></a>
-      <a href="#" class="p-4 border-4 border-solid border-white"><tree-icon name="logo-instagram"></tree-icon></a>
-      <a href="#" class="p-4 border-4 border-solid border-white"
-        ><tree-icon name="musical-notes-outline"></tree-icon
-      ></a>
+      <a href="#" class="p-4 border-4 border-solid border-white">
+        <tree-icon name="logo-twitter"></tree-icon>
+        <span class="sr-only">Twitter</span>
+      </a>
+      <a href="#" class="p-4 border-4 border-solid border-white">
+        <tree-icon name="logo-facebook"></tree-icon>
+        <span class="sr-only">Facebook</span>
+      </a>
+      <a href="#" class="p-4 border-4 border-solid border-white">
+        <tree-icon name="logo-instagram"></tree-icon>
+        <span class="sr-only">Instagram</span>
+      </a>
+      <a href="#" class="p-4 border-4 border-solid border-white">
+        <tree-icon name="musical-notes-outline"></tree-icon>
+        <span class="sr-only">Spotify</span>
+      </a>
     </div>
     <footer class="absolute bottom-0 left-0 w-full">
-      <p class="text-center text-xl mb-8">
+      <p class="text-center text-xl mb-8 font-bold text-shadow-sm">
         &copy; <template @text="currentYear" webc:nokeep></template>
       </p>
     </footer>
