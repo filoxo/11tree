@@ -9,7 +9,7 @@
     <link webc:keep rel="stylesheet" :href="$data.iconSet.url" />
   </head>
   <body
-    class="bg-cover bg-center bg-[url('/static/kelly-sikkema-cTQNRug8dfE-unsplash.jpg')] my-6"
+    class="min-h-screen bg-cover bg-center bg-[url('/static/kelly-sikkema-cTQNRug8dfE-unsplash.jpg')] p-4 md:p-6"
   >
     <main
       @raw="content"
