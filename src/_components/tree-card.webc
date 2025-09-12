@@ -1,0 +1,31 @@
+<!--
+  tree-card component
+  A card component with gradient background, image, title, and hover effects
+  
+  Props:
+  - title: The title of the card
+  - image-src: The source URL of the image
+  - image-alt: Alt text for the image
+  - from-color: The starting gradient color (default: from-teal-300)
+  - to-color: The ending gradient color (default: to-yellow-400)
+  - href: URL to navigate to when clicked (default: #)
+-->
+<a :href="href ?? '#'" :class="`group rounded-lg block aspect-video bg-gradient-to-br ${fromColor ?? 'from-teal-300'} ${toColor ?? 'to-yellow-400'} p-0`">
+  <!-- Gradient Background with Image -->
+  <div class="aspect-video overflow-hidden rounded-lg">
+    <img 
+      :src="imageSrc" 
+      :alt="imageAlt ?? title" 
+      class="w-full h-full object-cover mix-blend-multiply" 
+    />
+  </div>
+  
+  <!-- Title and Arrow -->
+  <div class="p-6 flex justify-between items-center bg-black/30">
+    <h3 class="text-xl font-medium text-white" @text="title"></h3>
+    <span class="bg-teal-400 rounded-full p-2 text-black opacity-0 group-hover:opacity-100 transition-opacity">
+      <tree-icon name="arrow-forward"></tree-icon>
+    </span>
+  </div>
+</a>
+
