@@ -8,7 +8,7 @@
     <link webc:keep rel="stylesheet" href="/styles/theme.css" />
     <link webc:keep rel="stylesheet" :href="$data.iconSet.url" />
 	</head>
-	<body class="m-5 md:m-7 space-y-9">
+	<body class="min-h-screen bg-cover bg-center bg-[url('/static/mountain-landscape.webp')] p-4 md:p-6">
     <main @raw="content" class="space-y-9"></main>
     <footer>
       <p class="text-center text-sm text-gray-500">
