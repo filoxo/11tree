@@ -4,5 +4,5 @@
   if(!$data.iconSet.names.includes(name))
     throw new Error(`icon '${name}' is missing from list! add it in .eleventy config`);
 
-  `<span class="icon icon--${$data.iconSet.theme} icon--${$data.iconSet.theme}--${name} ${iconSize} text-[#f8f7f4]" aria-hidden="true">&nbsp;</span>`;
+  `<span class="icon icon--${$data.iconSet.theme} icon--${$data.iconSet.theme}--${name} ${iconSize} cursor-pointer text-cream hover:scale-125 hover:text-hampton transition-scale duration-250" aria-hidden="true">&nbsp;</span>`;
 </script>

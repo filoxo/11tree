@@ -1,4 +1,4 @@
 
-<a class="inline-flex w-auto items-center justify-center gap-4 rounded-full" :href={href}>
+<a class="inline-flex w-auto items-center justify-center gap-4 rounded-full transition-scale duration-250 hover:bg-hampton hover:scale-105" :href={href}>
   <slot></slot>
 </a>

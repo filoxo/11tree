@@ -3,12 +3,12 @@ layout: "tree-base-layout"
 title: 11tree - a Linktree clone static site
 ---
 
-<section class="flex flex-col items-center max-w-md mx-auto w-full space-y-6">
+<section class="flex flex-col items-center max-w-md mx-auto w-full space-y-8">
   <tree-avatar src="/static/fun-avatar.jpg" alt="@11tree avatar" class="w-24 h-24 rounded-full shadow-lg -mt-16 border-4 object-cover"></tree-avatar>
 
   <h1 class="text-2xl font-bold text-center">@11tree</h1>
 
-  <p class="text-base text-gray-700 text-center max-w-xs">an innovative travel practice that brings travel inspiration into daily life.</p>
+  <p class="text-base text-center max-w-xs font-medium">an innovative travel practice that brings travel inspiration into daily life.</p>
 
   <div class="w-full flex flex-col gap-4 mt-2">
     <tree-link-pill href="#">

@@ -6,28 +6,34 @@
  */
 @layer components {
   body {
-    @apply text-slate-800 text-center;
+    @apply text-center;
   }
   a,
   button {
-    @apply py-2 px-5 w-fit leading-relaxed tracking-wider uppercase font-semibold text-sm text-[#f8f7f4] bg-[#375D87] transition-colors duration-300 focus:outline-none focus:ring ring-offset-1 inline-block w-full text-center hover:enabled:cursor-pointer;
-  }
-  footer {
-    @apply fixed bottom-0 left-0 right-0 mb-2;
+    @apply cursor-pointer py-2 px-5 w-fit leading-relaxed tracking-wider uppercase font-semibold text-sm text-navy bg-cream focus:outline-none focus:ring ring-offset-1 inline-block w-full text-center hover:enabled:cursor-pointer;
   }
   h1 {
-    @apply text-4xl font-bold text-[#0c2113] text-center;
+    @apply text-4xl font-bold text-navy text-center;
   }
   h2 {
-    @apply text-3xl font-bold text-[#0c2113] text-center;
+    @apply text-3xl font-bold text-navy text-center;
   }
   h3 {
-    @apply text-2xl font-bold text-[#0c2113] text-center;
+    @apply text-2xl font-bold text-navy text-center;
   }
   h4 {
-    @apply text-xl font-bold text-[#0c2113] text-center;
+    @apply text-xl font-bold text-navy text-center;
+  }
+  p {
+    @apply text-center text-navy
   }
   .section {
     @apply max-w-lg m-auto space-y-5 md:space-y-7;
   }
+}
+
+@theme {
+  --color-cream: #e6ebcd;
+  --color-hampton: #e6e1b5;
+  --color-navy: #212b46;
 }
